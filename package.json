@@ -1,0 +1,32 @@
+{
+  "name": "yeti-server",
+  "version": "0.0.1",
+  "description": "Yeti game server",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterPanen/yeti-server.git"
+  },
+  "author": "Rasmus Knudsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterPanen/yeti-server/issues"
+  },
+  "homepage": "https://github.com/PeterPanen/yeti-server#readme",
+  "dependencies": {
+    "debug": "^2.3.3",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
