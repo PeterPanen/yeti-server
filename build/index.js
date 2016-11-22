@@ -8,12 +8,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // Instantiate application.
 var app = (0, _express2.default)();
-var port = 3000;
+var PORT = 3000;
 
-// Root route handler
+// Root route handler.
 app.get('/', function (req, res) {
   return res.json({ message: 'SCV good to go, sir!' });
 });
 
-// Application http listener
-app.listen(port);
+// Application http listener.
+app.listen(PORT);
