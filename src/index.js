@@ -1,11 +1,12 @@
 import express from 'express';
+import routes from './routes';
 
 // Instantiate application.
 const app = express();
 const PORT = 3000;
 
-// Root route handler.
-app.get('/', (req, res) => res.json({ message: 'SCV good to go, sir!' }));
+// Mount routes.
+app.use(routes);
 
 // Application http listener.
 app.listen(PORT);
