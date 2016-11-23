@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Yeti game server",
   "scripts": {
+    "start": "nodemon --watch src --exec babel-node -- src/index.js",
+    "start:prod": "node build/index.js",
     "build": "babel src --out-dir build",
-    "start": "node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,6 +30,7 @@
     "babel-preset-stage-1": "^6.16.0",
     "eslint": "^3.10.2",
     "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0"
   }
 }
