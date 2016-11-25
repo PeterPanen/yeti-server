@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Yeti game server",
   "scripts": {
-    "start": "nodemon --watch src --exec babel-node -- src/index.js",
+    "start": "NODE_ENV=development DEBUG=development nodemon --watch src --exec babel-node -- src/index.js",
     "start:prod": "node build/index.js",
     "build": "babel src --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,10 +19,13 @@
   },
   "homepage": "https://github.com/PeterPanen/yeti-server#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "config": "^1.24.0",
     "debug": "^2.3.3",
     "express": "^4.14.0",
     "passport": "^0.3.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "rethinkdb": "^2.3.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -31,6 +34,8 @@
     "eslint": "^3.10.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-react": "^6.7.1",
     "nodemon": "^1.11.0"
   }
 }
