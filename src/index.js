@@ -8,5 +8,5 @@ const PORT = 3000;
 // Mount routes.
 app.use(routes);
 
-// Application http listener.
+// Start listening for connections.
 app.listen(PORT);
